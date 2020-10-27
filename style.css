@@ -217,6 +217,7 @@ body.dark {
   --darkGrisClaro: #707070;
   --dark: #42444f;
   --darkBlanco: rgb(228, 228, 228);
+  --darkNaranjaClaro: #ffcfaa;
   background-color: var(--dark);
   transition: all 0.3;
 }
@@ -232,4 +233,16 @@ body.dark .rejilla .acerca-de {
 
 body.dark .cartas .carta {
   background-color: var(--dark);
+}
+
+body.dark .carousel .carousel-item .nombre {
+  color: white;
+}
+
+body.dark .cartas .carta h3 {
+  color: var(--darkNaranjaClaro);
+}
+
+body.dark .cartas .carta p {
+  color: white;
 }
