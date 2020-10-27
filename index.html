@@ -1,148 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ActivePower</title>
-    <!-- custom css -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/8ce167175a.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- open sans font google -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Materialize.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-  </head>
 
-  <body id="body" class="transicion">
-    <!-- menu -->
-    <header>
-      <ol class="menu-list">
-        <li class="menu-item">
-          <b><a href="#home">INICIO</a></b>
-        </li>
-        <li class="menu-item">
-          <b><a href="#about">QUIENES SOMOS</a></b>
-        </li>
-        <li class="menu-item">
-          <b><a href="#contact">CONTACTANOS</a></b>
-        </li>
-      </ol>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ActivePower</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/8ce167175a.js" crossorigin="anonymous"></script>
+  <!-- open sans font google -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Materialize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
 
-    <!-- parte superior y boton de descarga-->
-    <div class="contenedor">
-      <!-- home -->
-      <div id="home">
-        <div class="caja-padre">
-          <div class="caja">
-            <img class="img" src="descarga.png" alt="img de fondo" />
-            <div class="divIcono">
-              <center>
-                <img
-                  class="icono"
-                  src="icons/logoMini.svg"
-                  alt="Active Power"
-                />
-                <p class="titulo">Active Power</p>
-              </center>
-              <p class="descarga">
-                <a href="#">DESCARGA</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+<body id="body" class="transicion">
+  <!-- menu -->
+  <header>
+    <ol class="menu-list">
+      <li class="menu-item">
+        <b><a href="#home">INICIO</a></b>
+      </li>
+      <li class="menu-item">
+        <b><a href="#about">QUIENES SOMOS</a></b>
+      </li>
+      <li class="menu-item">
+        <b><a href="#contact">CONTACTANOS</a></b>
+      </li>
+    </ol>
+  </header>
 
-      <!-- about -->
-      <div id="about">
-        <h1>¿QUIENES SOMOS?</h1>
-        <div class="rejilla">
-          <div class="acerca-de"></div>
-          <div class="acerca-de"></div>
-        </div>
-
-        <!-- carousel show-->
-        <div class="carousel">
-          <div class="carousel-item">
-            <h6 class="nombre"><b>Santiago Ceballos Deossa</b></h6>
-            <img src="img/persona1.jpg" alt="" />
-          </div>
-
-          <div class="carousel-item">
-            <h6 class="nombre"><b>Cristian Echeverri Gallego</b></h6>
-            <img src="img/persona2.jpg" alt="" />
-          </div>
-
-          <div class="carousel-item">
-            <h6 class="nombre">Pedro Willy Hoyos Rios</h6>
-            <img src="img/persona3.jpg" alt="" />
-          </div>
-
-          <div class="carousel-item">
-            <h6 class="nombre">Daniel Stiven Agudelo</h6>
-            <img src="img/persona4.jpeg" alt="" />
-          </div>
-
-          <div class="carousel-item">
-            <h6 class="nombre">Stiven</h6>
-            <img src="img/persona5.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <!-- contact-->
-      <div id="contact">
-        <h1>CONTACTANOS</h1>
-        <div class="cartas">
-          <div class="carta">
-            <h3>¿Donde nos encontramos?</h3>
-            <!--aca va la cosa de google maps-->
-            <p>
-              <i class="fas fa-map-marker blue-text"></i> Centro de manofactura
-              del cuero- itagui
+  <!-- parte superior y boton de descarga-->
+  <div class="contenedor">
+    <!-- home -->
+    <div id="home">
+      <div class="caja-padre">
+        <div class="caja">
+          <img class="img" src="descarga.png" alt="img de fondo" />
+          <div class="divIcono">
+            <center>
+              <img class="icono" src="icons/logoMini.svg" alt="Active Power" />
+              <p class="titulo">Active Power</p>
+            </center>
+            <p class="descarga">
+              <a href="#">DESCARGA</a>
             </p>
           </div>
-          <div class="carta">
-            <h3>Nuetras redes sociales</h3>
-            <p><i class="fab fa-facebook-f blue-text"></i>Facebook</p>
-            <p><i class="fab fa-twitter blue-text"></i>Twitter</p>
-            <p><i class="fab fa-instagram"></i>Instagram</p>
-          </div>
-
-          <div class="carta">
-            <h3>Nuestro numero y correo</h3>
-            <p><i class="fas fa-phone-alt blue-text"></i>4811590</p>
-            <p>
-              <i class="fas fa-envelope blue-text"></i>activepower00@gmial.com
-            </p>
-            <p><i class="fab fa-whatsapp blue-text"></i>el numero de su qcha</p>
-          </div>
         </div>
-      </div>
-      <!-- btn change them-->
-      <div class="boton">
-        <a
-          id="btn-theme"
-          class="btn-floating btn-large waves-effect waves-light red"
-        >
-          <i class="fas fa-sun"></i>
-        </a>
       </div>
     </div>
 
-    <!-- Materialize.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- custom js -->
-    <script src="main.js"></script>
-  </body>
+    <!-- about -->
+    <div id="about">
+      <h1>¿QUIENES SOMOS?</h1>
+      <div class="rejilla">
+        <div class="acerca-de"></div>
+        <div class="acerca-de"></div>
+      </div>
+
+      <!-- carousel show-->
+      <div class="carousel">
+        <div class="carousel-item">
+          <h6 class="nombre"><b>Santiago Ceballos Deossa</b></h6>
+          <img src="img/persona1.jpg" alt="" />
+        </div>
+
+        <div class="carousel-item">
+          <h6 class="nombre"><b>Cristian Echeverri Gallego</b></h6>
+          <img src="img/persona2.jpg" alt="" />
+        </div>
+
+        <div class="carousel-item">
+          <h6 class="nombre">Pedro Willy Hoyos Rios</h6>
+          <img src="img/persona3.jpg" alt="" />
+        </div>
+
+        <div class="carousel-item">
+          <h6 class="nombre">Daniel Stiven Agudelo</h6>
+          <img src="img/persona4.jpeg" alt="" />
+        </div>
+
+        <div class="carousel-item">
+          <h6 class="nombre">Stiven</h6>
+          <img src="img/persona5.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- contact-->
+    <div id="contact">
+      <h1>CONTACTANOS</h1>
+      <div class="cartas">
+        <div class="carta">
+          <h3>¿Donde nos encontramos?</h3>
+          <!--aca va la cosa de google maps-->
+          <p>
+            <i class="fas fa-map-marker blue-text"></i> Centro de manofactura
+            del cuero- itagui
+          </p>
+        </div>
+        <div class="carta">
+          <h3>Nuetras redes sociales</h3>
+          <p><i class="fab fa-facebook-f blue-text"></i>Facebook</p>
+          <p><i class="fab fa-twitter blue-text"></i>Twitter</p>
+          <p><i class="fab fa-instagram"></i>Instagram</p>
+        </div>
+
+        <div class="carta">
+          <h3>Nuestro numero y correo</h3>
+          <p><i class="fas fa-phone-alt blue-text"></i>4811590</p>
+          <p>
+            <i class="fas fa-envelope blue-text"></i>activepower00@gmial.com
+          </p>
+          <p><i class="fab fa-whatsapp blue-text"></i>el numero de su qcha</p>
+        </div>
+      </div>
+    </div>
+    <!-- btn change them-->
+    <div class="boton">
+      <a id="btn-theme" class="btn-floating btn-large waves-effect waves-light red">
+        <i class="fas fa-sun"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Materialize.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- custom js -->
+  <script src="main.js"></script>
+</body>
+<!--footer-->
+
 </html>
