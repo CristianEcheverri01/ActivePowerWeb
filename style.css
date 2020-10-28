@@ -199,10 +199,38 @@
 .cartas .carta {
   background-color: white;
   border: 1px solid black;
-  text-align: center;
+  text-align: left;
+  
   -webkit-box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
   box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
+  
+}
+.carta p i {
+  line-height: 4;
+  font-size: 3em ;
+  padding-right: 10%;
+  margin-left: 1em;
+}
+
+.carta h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.carta a {
+  color: #42444f;
+  font-size: 20px;
+}
+
+#contact h1  {
+  font-weight: bold;
+
+}
+#contact {
+  margin-left: 0.5em;
+  margin-bottom: 2.5em;
 }
 
 /* btn change theme */
@@ -243,6 +271,8 @@ body.dark .cartas .carta h3 {
   color: var(--darkNaranjaClaro);
 }
 
-body.dark .cartas .carta p {
+body.dark .cartas .carta p a, body.dark .cartas .carta p {
   color: white;
 }
+
+
