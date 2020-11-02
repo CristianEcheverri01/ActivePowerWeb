@@ -194,6 +194,8 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1;
   grid-gap: 50px;
+  position: relative;
+  
 }
 
 .cartas .carta {
@@ -231,6 +233,16 @@
 #contact {
   margin-left: 0.5em;
   margin-bottom: 2.5em;
+}
+
+div .back {
+  background-color: #ffbd7191;
+  position: absolute;
+  height: 700px;
+  width: 50%;
+  top: 1610px;
+  margin-left: 50%;
+  z-index: -1;
 }
 
 /* btn change theme */
