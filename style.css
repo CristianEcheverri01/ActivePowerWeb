@@ -10,6 +10,8 @@
 	--naranja: rgb(247, 105, 0);
 }
 
+
+
 /* light theme */
 .transicion {
 	transition: background 0.2s linear;
@@ -83,7 +85,7 @@
 .descarga {
 	margin-top: 35px;
 	text-align: center;
-	font-size: 28px;
+	font-size: 38px;
 	z-index: 5;
 }
 
@@ -106,6 +108,7 @@
 
 #about {
 	position: relative;
+	margin-top: 10%;
 }
 
 #about h1 {
@@ -119,6 +122,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, 40%);
 	grid-gap: 10vw;
+	margin-left: 100px;
 }
 
 .rejilla .acerca-de {
@@ -194,7 +198,8 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1;
 	grid-gap: 50px;
-	position: relative;
+	position: absolute;
+	margin-left: 100px;
 }
 
 .cartas .carta {
@@ -230,6 +235,11 @@
 #contact {
 	margin-left: 0.5em;
 	margin-bottom: 2.5em;
+	height: 800px;
+	width: 100%;
+	position: absolute;
+	background-color: ;
+
 }
 
 div .back {
@@ -237,7 +247,7 @@ div .back {
 	position: absolute;
 	height: 700px;
 	width: 50%;
-	top: 206%;
+	top: 5%;
 	margin-left: 50%;
 	z-index: -1;
 }
