@@ -48,6 +48,15 @@
 	@media (max-width: 768px) {
 		body {
 			background-color: lightblue;
+			box-sizing: border-box;
+		}
+
+		.menu-list {
+			list-style: none;
+			display: grid;
+			position: fixed;
+			grid-template-columns: repeat(3, 34vw);
+			z-index: 1;
 		}
 
 		.caja-padre {
