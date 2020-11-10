@@ -30,4 +30,8 @@
 	div .back {
 		height: 200vh;
 	}
+
+	.tbl p {
+		font-size: 10px;
+	}
 }

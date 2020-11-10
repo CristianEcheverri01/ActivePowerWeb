@@ -1,7 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	/*variables*/
 	--blancoTransparente: rgba(255, 255, 255, 0.5);
 	--negro: rgb(36, 30, 32);
@@ -214,6 +214,12 @@
 	-webkit-box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
 	-moz-box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
 	box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
+}
+.carta p {
+	font-size: 10px;
+}
+.carta p .local {
+	font-size: 17px;
 }
 .carta p i {
 	line-height: 4;

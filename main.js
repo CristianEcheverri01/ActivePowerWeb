@@ -57,7 +57,7 @@ const resolucion = () => {
 		cardNuestroCorreo.innerHTML = `<h3>
 		Nuestro numero y correo
 		</h3>
-		<table>
+		<table class="tbl">
 			<thead></thead>
 			<tbody>
 				<tr>
@@ -87,3 +87,4 @@ const resolucion = () => {
 }
 
 window.addEventListener('resize', resolucion)
+window.addEventListener('load', resolucion)
