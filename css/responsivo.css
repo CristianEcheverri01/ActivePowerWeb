@@ -47,7 +47,6 @@
 @media (orientation: portrait) {
 	@media (max-width: 768px) {
 		body {
-			background-color: lightblue;
 			box-sizing: border-box;
 		}
 
@@ -67,6 +66,27 @@
 			width: 100%;
 			height: 45vh;
 			position: relative;
+		}
+	}
+	@media (max-width: 460px) {
+		.menu-list {
+			display: none;
+		}
+		.descarga a {
+			text-decoration: none;
+			padding: 10px 50px;
+			font-size: 18px;
+		}
+
+		.rejilla {
+			margin-left: 50px;
+		}
+		.hamburgesa {
+			position: fixed;
+			display: block;
+			z-index: 1;
+			top: 5px;
+			left: 5px;
 		}
 	}
 }

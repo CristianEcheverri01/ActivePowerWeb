@@ -1,6 +1,5 @@
 //carousel show automatico
-
-document.addEventListener('DOMContentLoaded', () => {
+const carrusle = num => {
 	const e = document.querySelectorAll('.carousel')
 
 	M.Carousel.init(e, {
@@ -8,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		dist: -150,
 		shift: 5,
 		padding: 5,
-		numVisible: 5,
+		numVisible: num,
 		noWrap: false,
 		indicators: true,
 	})
@@ -23,25 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			instance1.next(1)
 		}
 	}, 2000)
-})
+}
 
-//btn change theme
-const btn = document.getElementById('btn-theme')
-const body = document.getElementById('body')
-btn.addEventListener('click', () => {
-	btn.classList.toggle('blue')
-	body.classList.toggle('dark')
-})
-
-//responsive
-const cardNuestroCorreo = document.getElementById('numeros')
-
-const resolucion = () => {
-	ancho = window.screen.width
-	posicion = window.screen.orientation.type
-
-	if (ancho > 1024 || posicion == 'portrait-primary') {
-		cardNuestroCorreo.innerHTML = `<h3>Nuestro numero y correo</h3>
+const parrafos = e => {
+	j = ``
+	if (e === 1) {
+		j = `<h3>Nuestro numero y correo</h3>
 		<p>
 			<i class="fas fa-phone-alt black-text"></i
 			><a href="#">4811590</a>
@@ -54,9 +40,8 @@ const resolucion = () => {
 			<i class="fab fa-whatsapp black-text"></i
 			><a href="#">el numero de su qcha</a>
 		</p>`
-	}
-	if (ancho <= 1024 && ancho > 768) {
-		cardNuestroCorreo.innerHTML = `<h3>
+	} else if (e === 'table') {
+		j = `<h3>
 		Nuestro numero y correo
 		</h3>
 		<table class="tbl">
@@ -86,7 +71,41 @@ const resolucion = () => {
 			</tbody>
 		</table>`
 	}
+	return j
 }
+//btn change theme
+const btn = document.getElementById('btn-theme')
+const body = document.getElementById('body')
+btn.addEventListener('click', () => {
+	btn.classList.toggle('blue')
+	body.classList.toggle('dark')
+})
+
+//responsive
+
+const cardNuestroCorreo = document.getElementById('numeros')
+const resolucion = () => {
+	ancho = window.screen.width
+	posicion = window.screen.orientation.type
+
+	if (posicion == 'portrait-primary' && ancho <= 420) {
+		cardNuestroCorreo.innerHTML = parrafos(1)
+		document.addEventListener('DOMContentLoaded', carrusle(1))
+		const hamburgesa = document.getElementById('hamburgesa')
+	} else {
+		document.addEventListener('DOMContentLoaded', carrusle(5))
+	}
+
+	ancho >= 768 ? (cardNuestroCorreo.innerHTML = parrafos(1)) : null
+	ancho > 1024 ? (cardNuestroCorreo.innerHTML = parrafos(1)) : null
+	ancho <= 1024 && ancho > 768 ? (cardNuestroCorreo.innerHTML = parrafos('table')) : null
+}
+
+hamburgesa.addEventListener('click', () => {
+	const divBurger = document.getElementById('div-burger')
+	divBurger.classList.toggle('active')
+	hamburgesa.classList.toggle('active')
+})
 
 window.addEventListener('resize', resolucion)
 window.addEventListener('load', resolucion)
