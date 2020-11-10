@@ -199,11 +199,12 @@
 }
 .cartas {
 	display: grid;
-	grid-template-columns: repeat(3, 33%);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1;
 	grid-gap: 20px;
+	width: 95%;
 	position: absolute;
-	margin-left: 100px;
+	margin-left: 25px;
 }
 
 .cartas .carta {
@@ -237,6 +238,9 @@
 .carta a {
 	color: #42444f;
 	font-size: 20px;
+}
+.md-10 {
+	margin-bottom: 150px;
 }
 
 #contact {

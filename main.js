@@ -48,7 +48,7 @@ const resolucion = () => {
 			<i class="fas fa-envelope black-text"></i
 			><a href="#">activepower00@gmial.com</a>
 		</p>
-		<p>
+		<p class="md-10">
 			<i class="fab fa-whatsapp black-text"></i
 			><a href="#">el numero de su qcha</a>
 		</p>`
