@@ -38,7 +38,9 @@ const cardNuestroCorreo = document.getElementById('numeros')
 
 const resolucion = () => {
 	ancho = window.screen.width
-	if (ancho > 1024) {
+	posicion = window.screen.orientation.type
+
+	if (ancho > 1024 || posicion == 'portrait-primary') {
 		cardNuestroCorreo.innerHTML = `<h3>Nuestro numero y correo</h3>
 		<p>
 			<i class="fas fa-phone-alt black-text"></i
@@ -53,7 +55,7 @@ const resolucion = () => {
 			><a href="#">el numero de su qcha</a>
 		</p>`
 	}
-	if (ancho <= 1024) {
+	if (ancho <= 1024 && ancho > 768) {
 		cardNuestroCorreo.innerHTML = `<h3>
 		Nuestro numero y correo
 		</h3>
@@ -88,3 +90,4 @@ const resolucion = () => {
 
 window.addEventListener('resize', resolucion)
 window.addEventListener('load', resolucion)
+window.addEventListener('orientationchange', resolucion)

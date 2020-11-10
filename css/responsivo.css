@@ -51,6 +51,10 @@
 			box-sizing: border-box;
 		}
 
+		div .back {
+			height: 140vh;
+		}
+
 		.menu-list {
 			list-style: none;
 			display: grid;
@@ -64,10 +68,5 @@
 			height: 45vh;
 			position: relative;
 		}
-	}
-}
-@media (max-width: 768px) {
-	div .back {
-		height: 155vh;
 	}
 }
