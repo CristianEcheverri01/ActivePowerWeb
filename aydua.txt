@@ -1,26 +1,2 @@
-<table>
-	<thead></thead>
-	<tbody>
-		<tr>
-			<td>
-				<p>
-					<i class="fas fa-phone-alt black-text"></i>
-					<a href="#">4811590</a>
-				</p>
-			</td>
-			<td>
-				<p>
-					<i class="fas fa-envelope black-text"></i>
-					<a href="#">activepower00@gmial.com</a>
-				</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p>
-					<i class="fab fa-whatsapp black-text"></i>
-					<a href="#">el numero de su qcha</a>										</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
+archivo para poner alguna cosa
+que depronto nos falte
