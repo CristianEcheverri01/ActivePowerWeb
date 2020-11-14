@@ -88,5 +88,23 @@
 			top: 5px;
 			left: 5px;
 		}
-	}
+
+		#contactanos {
+			grid-template-columns: repeat(1, 2fr);
+			grid-template-rows: repeat(3, 300px);
+			width: 310px;
+			height: 200px;
+			margin: auto;
+			
+
+		}
+
+		div .back {
+			background-color: white;
+		}
+
+		body.dark div .back {
+			background: #42444f;
+		  }
+		}
 }
