@@ -170,9 +170,19 @@ html {
 	-webkit-box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
 	-moz-box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
 	box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.17);
+	text-align: center;
+}
+
+.rejilla .acerca-de p {
+	margin: 10px;
 }
 
 /*carousel show*/
+
+.link {
+	color: #000;
+	text-decoration: none;
+}
 
 .carousel {
 	min-width: 88% !important;

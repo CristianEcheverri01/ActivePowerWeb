@@ -38,7 +38,7 @@ const parrafos = e => {
 		</p>
 		<p class="md-10">
 			<i class="fab fa-whatsapp black-text"></i
-			><a href="#">el numero de su qcha</a>
+			><a href="#">3016115580</a>
 		</p>`
 	} else if (e === 'table') {
 		j = `<h3>
@@ -65,7 +65,7 @@ const parrafos = e => {
 					<td>
 						<p>
 							<i class="fab fa-whatsapp black-text"></i>
-							<a href="#">el numero de su qcha</a>										</p>
+							<a href="#">3016115580</a>										</p>
 					</td>
 				</tr>
 			</tbody>
